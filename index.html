@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Merge Strike</title>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body><div id="app">
+<div id="hud"><span class="pill" id="hCoins"></span><span class="pill" id="hWave"></span><span class="pill" id="hHp"></span><button id="buy" class="sp"></button><button id="up"></button><button id="snd" aria-label="Som"></button><button id="pz" aria-label="Pausar (P)"><i></i><i></i><i></i></button></div>
+<div id="stage"><div id="wrap"><canvas id="c" width="640" height="360"></canvas>
+<div id="tut"><p id="tutT"></p><div id="tutRow"><button id="tutB" class="big"></button><button id="tutSkip">Pular tutorial</button></div></div>
+<div id="menu"><h1 id="mT">Merge Strike</h1><p id="mS"></p>
+<div id="mBtns"><button class="big" id="cont" style="display:none">Continuar</button><button class="big" id="play">Carregando…</button><button class="big" id="next">Próxima fase</button><button class="big alt" id="how">Como jogar</button><button class="big alt" id="set">Configurações</button><button class="big alt" id="home">Voltar ao menu</button></div><p id="mB"></p>
+<div id="stp"><h1>Escolha a fase</h1><div id="cards"></div><button class="big alt" id="stBack">Voltar</button></div>
+<div id="setp"><h1>Configurações</h1><div class="rows">
+<label class="row"><span>Volume do jogo</span><input type="range" id="sVol" min="0" max="100"><b id="sVolV"></b></label>
+<label class="row"><span>Tremor de tela</span><input type="checkbox" id="sShake"></label>
+<label class="row"><span>Números de dano</span><input type="checkbox" id="sDmg"></label>
+<label class="row"><span>Efeitos visuais</span><input type="checkbox" id="sFx"></label>
+<div class="row"><button class="mini" id="sFull">Tela cheia</button><button class="mini warn" id="sReset">Apagar progresso</button></div></div>
+<button class="big alt" id="setBack">Voltar</button></div>
+<div id="pausep"><h1>Pausado</h1><p>Aperte P para continuar</p><div class="col"><button class="big" id="pzRes">Continuar</button><button class="big alt" id="pzRst">Reiniciar fase</button><button class="big alt" id="pzSet">Configurações</button><button class="big alt" id="pzQuit">Voltar ao menu</button></div></div>
+<div id="hp"><h1>Como jogar</h1><ul><li>Toque em <b>Comprar torre</b> para colocar uma torre num quadrado vazio.</li><li>Arraste uma torre sobre outra do mesmo nível para juntar e evoluir.</li><li>Use <b>Evoluir torre</b> para que as próximas torres nasçam com nível maior.</li><li>Os 8 quadrados atiram, sempre na própria linha.</li><li>Não deixe os monstros passarem da cerca. O chefe tira 3 de vida.</li><li>Chegue à onda 25 para vencer a fase.</li></ul><div><button class="big" id="tutBtn">Ver tutorial</button> <button class="big alt" id="hpBack">Voltar</button></div></div>
+</div></div></div>
+<div id="hint"></div>
+</div>
+<script src="script.js"></script>
+</body></html>
